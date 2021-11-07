@@ -1,1 +1,60 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #game{
+            box-shadow: 10px 10px 15px black;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        .button {
+            background-color: #555555;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            transition-duration: 0.2s;
+        }
+        .button:hover {
+            background-color: #FFFFFF;
+            color: black;
+        }
+        .button:active {
+            background-color: #FFFFFF;
+            box-shadow: 0 5px #666;
+            -webkit-border-radius: 12px #666;
+            -moz-border-radius: 12px #666;
+            border-radius: 12px;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>15 Puzzle Game</h1>
+        <canvas id="game"></canvas>
+        <br></br>
+        <button class="button" id="3puzzle">3 X 3</button>
+        <button class="button" id="4puzzle">4 X 4</button> 
+        <button class="button" id="5puzzle">5 X 5</button>
+    </div>
+    <script src="game.js" type=module></script>
+</body>
+</html>
