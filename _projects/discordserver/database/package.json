@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "disconnect": "^1.2.2",
+    "mongodb": "^4.10.0"
+  }
+}

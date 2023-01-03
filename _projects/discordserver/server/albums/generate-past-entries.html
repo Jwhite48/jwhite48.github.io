@@ -1,0 +1,30 @@
+<div id={{year}} class="tabcontent" style="display: none;">
+  <div class="card-container">
+    {{#scope}}
+    <div class="card">
+      <div class="topleft">#{{plusOneOrder}}</div>
+      <img src={{img_url}} alt="COVER ART NOT FOUND" width=200 height=200 />
+      <h4><b>{{artist}}</b></h4>
+      {{name}}
+      <div class="extrainfo">
+        <p><b>Country: </b>{{country}}</p>
+        <p><b>Year: </b>{{year}}</p>
+        <p><b>Label: </b>{{label}}</p>
+        <p>
+          <b>Genres: </b>
+          {{#genres}}
+          {{.}}
+          {{/genres}}
+        </p>
+        <p>
+          <b>Styles: </b>
+          {{#styles}}
+          {{.}}
+          {{/styles}}
+        </p>
+        <b>Discogs: </b><a href=https://{{url}}>Link</a>
+      </div>
+    </div>
+    {{/scope}}
+  </div>
+</div>

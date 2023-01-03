@@ -1,0 +1,28 @@
+<div id="{{year}}" class="tabcontent" style="display: none">
+  <div class="card-container">
+    {{#scope}}
+    <div class="card">
+      <div class="topleft">#{{plusOneOrder}}</div>
+      <img
+        src="{{poster_path}}"
+        alt="COVER ART NOT FOUND"
+        width="250"
+        height="375"
+      />
+      <h4><b>{{director}}</b></h4>
+      {{title}}
+      <div class="extrainfo">
+        <p><b>Year: </b>{{date}}</p>
+        <p>
+          <b>Genres: </b>
+          {{#genre_ids}} {{.}} {{/genre_ids}}
+        </p>
+        <b>TMDB: </b
+        ><a href="https://www.themoviedb.org/movie/{{id}}?language=en-US"
+          >Link</a
+        >
+      </div>
+    </div>
+    {{/scope}}
+  </div>
+</div>

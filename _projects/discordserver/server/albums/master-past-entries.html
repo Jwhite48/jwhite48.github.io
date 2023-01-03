@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<style>
+	.card-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.card {
+		flex: 0 1 calc(23% - 1em);
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		border-style: groove;
+		border-radius: 15px;
+		border-width: thick;
+		padding: 10px 16px;
+		text-align: right;
+	}
+	.card h4 {
+		margin: 0;
+	}
+	.extrainfo {
+		text-align: left;
+	}
+	.extrainfo p {
+		margin: 0;
+	}
+	.topleft {
+		text-align: left;
+		font-size: 35px;
+		float: left;
+	}
+</style>
+</head>
+<body>
+	{{#years}}
+	<button onclick="reveal({{year}})" class="buttons">{{year}}</button>
+	{{/years}}
+	<br></br>
+  {{{html}}}
+
+	<script>
+		function reveal(value){
+			var years = document.getElementsByClassName("tabcontent");
+			for(var i=0; i<years.length; i++){
+				years.item(i).style.display = "none";
+			}
+			var elem = document.getElementById(value);
+			if (elem.style.display === "none") {
+		    elem.style.display = "block";
+		  }
+		}
+	</script>
+</body>
+</html>

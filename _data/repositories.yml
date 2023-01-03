@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - jwhite48
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - jwhite48/MaddenClicker
+  - jwhite48/cs375-BFS
+  - jwhite48/News_Market_Value
+  - jwhite48/Restricted_Turing_Machine
+  - jwhite48/15_Puzzle_Game
+  - jwhite48/The_Cave
