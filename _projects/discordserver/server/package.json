@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "mongodb": "^4.10.0",
-    "mustache": "^4.2.0"
-  }
-}

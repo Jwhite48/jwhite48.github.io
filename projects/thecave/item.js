@@ -1,0 +1,1 @@
+function Item(t){let e=t[0],n=t[1];Object.defineProperties(this,{name:{get:function(){return e}},weight:{get:function(){return n}}})}export function Pelt(){Item.call(this,["Pelt",20])};export function Scale(){Item.call(this,["Scale",3])};export function Claw(){Item.call(this,["Claw",5])};
